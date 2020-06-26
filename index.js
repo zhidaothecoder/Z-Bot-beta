@@ -14,7 +14,9 @@ client.on('message', msg => {
     else if (command === 'invite') return msg.channel.send(process.env.INVITE);
     else if (command === 'info') return msg.channel.send("***geez. you're nosy tryna find out more about me.*** I am a multi-purpose discord bot made by Zhidao. I guess if you want a bot he ***might*** help. I wouldn't ask him now, he's coding.");
     else if (command === 'prefix') return msg.channel.send("My prefix is: `zb!`");
-    else if (command === 'server') return message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+    else if (command === 'code') {
+        client.channels.find(x => x.name === 'coder').send("Hello <@&705053625113903104>, time to code! Dm Zhidao or <#722169162658611220>.");
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
