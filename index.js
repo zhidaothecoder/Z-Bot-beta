@@ -19,7 +19,7 @@ client.on('message', msg => {
 
 client.on('message', function(msg){
     if (msg.content === 'zb!code') {
-     client.channels.find(x => x.name === 'coders').send('Time to code!', {
+     client.channels.find(x => x.name === 'coders').send('Hello <@&705053625113903104>s, time to code! Dm Zhidao or <#722169162658611220>.', {
   	tts: true
       });
   }
