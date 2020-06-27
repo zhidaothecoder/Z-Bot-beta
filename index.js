@@ -19,10 +19,8 @@ client.on('message', msg => {
 
 client.on('message', function(msg){
     if (msg.content === 'zb!code') {
-        return msg.channel.send("Done.");
-     client.channels.find(x => x.name === 'coders').send('<@&705053625113903104>, if your available, lets code.', {
-  	tts: true
-      });
+        msg.channel.send("Done.");
+     client.channels.find(x => x.name === 'coders').send('<@&705053625113903104>, if your available, lets code.', {tts: true});
   }
   console.log(msg.author.username);
 })
