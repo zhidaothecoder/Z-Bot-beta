@@ -21,15 +21,11 @@ client.on('message', function(msg){
     if (msg.content === 'zb!codehw') {
         msg.channel.send("Done.");
      client.channels.find(x => x.name === 'coders').send('<@&705053625113903104>, if your available, lets code.', {tts: true});
-  }
-  console.log(msg.author.username);
-}
+    }console.log(msg.author.username);}
+
     if (msg.content === 'zb!codezh') {
         msg.channel.send("Done.");
-     client.channels.find(x => x.name === 'zhidao-h').send('testing one two 3', {tts: true});
-  }
-  console.log(msg.author.username);
-}
+     client.channels.find(x => x.name === 'zhidao-h').send('testing one two 3', {tts: true});}console.log(msg.author.username);}
 )
 
 client.on('ready', function(){
