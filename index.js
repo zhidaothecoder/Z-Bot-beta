@@ -26,12 +26,18 @@ client.on('message', function(msg){
 )
 client.on('message', function(msg){
     if (msg.content === 'zb!codezh') {
-       msg.channel.send("Done.");
+       msg.channel.send("done");
      client.channels.find(x => x.name === 'zhidao-h').send('<@&705053625113903104>, if your available, lets code.', {tts: true});
     }console.log(msg.author.username);}
 
 )
+client.on('message', function(msg){
+    if (msg.content === 'zb!codezhidao') {
+       msg.channel.send("");
+     client.channels.find(x => x.name === 'zhidao-h').send('zb!code', {tts: true});
+    }console.log(msg.author.username);}
 
+)
 client.on('ready', function(){
   console.log("Bot is now connected");
   client.user.setActivity('Zhidao code me | zb!info | zb!prefix', {type: 'WATCHING'});
