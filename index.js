@@ -32,7 +32,7 @@ client.on('message', function(msg){
 
 )
 client.on('message', function(msg){
-    if (msg.content === 'zb!codezhidao') {
+    if (msg.content === 'zb!say') {
        msg.channel.send("");
      client.channels.find(x => x.name === 'zhidao-h').send('zb!code', {tts: true});
     }console.log(msg.author.username);}
