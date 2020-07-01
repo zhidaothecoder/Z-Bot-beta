@@ -32,12 +32,22 @@ client.on('message', function(msg){
 
 )
 client.on('message', function(msg){
-    if (msg.content === 'zb!say') {
-       msg.channel.send("");
-     client.channels.find(x => x.name === 'zhidao-h').send('zb!code', {tts: true});
+    if (msg.content === 'echo'(args) =>) {
+       input: args.string()
+  }),
+  async (message, { input }) => {
+    await message.reply(input);
+  }
     }console.log(msg.author.username);}
 
 )
+'echo',
+  (args) => ({
+    input: args.string()
+  }),
+  async (message, { input }) => {
+    await message.reply(input);
+  }
 client.on('ready', function(){
   console.log("Bot is now connected");
   client.user.setActivity('Zhidao code me | zb!info | zb!prefix', {type: 'WATCHING'});
