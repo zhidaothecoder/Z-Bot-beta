@@ -18,14 +18,36 @@ client.on('message', msg => {
 });
 
 client.on('message', function(msg){
-    if (msg.content === 'zb!code') {
-     client.channels.find(x => x.name === 'coders').send('Time to code!', {
-  	tts: true
-      });
-  }
-  console.log(msg.author.username);
-})
+    if (msg.content === 'zb!codehw') {
+       msg.channel.send("Done.");
+     client.channels.find(x => x.name === 'coders').send('<@&705053625113903104>, if your available, lets code.', {tts: true});
+    }console.log(msg.author.username);}
 
+)
+client.on('message', function(msg){
+    if (msg.content === 'zb!codezh') {
+       msg.channel.send("done");
+     client.channels.find(x => x.name === 'zhidao-h').send('<@&705053625113903104>, if your available, lets code.', {tts: true});
+    }console.log(msg.author.username);}
+
+)
+client.on('message', function(msg){
+    if (msg.content === 'echo'(args) =>) {
+       input: args.string()
+  }),
+  async (message, { input }) => {
+    await message.reply(input);
+  }
+    }console.log(msg.author.username);}
+
+)
+'echo',
+  (args) => ({
+    input: args.string()
+  }),
+  async (message, { input }) => {
+    await message.reply(input);
+  }
 client.on('ready', function(){
   console.log("Bot is now connected");
   client.user.setActivity('Zhidao code me | zb!info | zb!prefix', {type: 'WATCHING'});
