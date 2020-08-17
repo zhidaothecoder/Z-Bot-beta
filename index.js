@@ -28,7 +28,7 @@ client.on('message', function(msg){
 
 client.on('ready', function(){
   console.log("Bot is now connected");
-  client.user.setActivity('Zhidao code me | zb!info | zb!prefix', {type: 'WATCHING'});
+  client.user.setActivity('zhidao code me | zb!info | zb!prefix', {type: 'WATCHING'});
   client.channels.find(x => x.name === 'zhidao').send("Ready and online!");
   
 });
